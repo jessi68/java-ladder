@@ -5,13 +5,18 @@ import java.util.List;
 
 public class Ladder {
 
-    private HashMap<Integer, Step> stepAt = new HashMap<>();
+    private HashMap<Integer, Step> stepsAt = new HashMap<>();
 
     public Ladder(HashMap<Integer, Step> stepAt) {
-        this.stepAt = stepAt;
+        this.stepsAt = stepAt;
     }
 
     public Step getWithHeight(int height) {
-        return stepAt.get(height);
+        return stepsAt.get(height);
     }
+
+    public HashMap<Integer, Step> getStepAt() {
+        return stepsAt;
+    }
+
 }
